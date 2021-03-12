@@ -6,8 +6,8 @@
 集成开发环境：Visual Studio Code
 ## 运行前准备工作
 1.cmd：找到该文件  
-  npm run serve
-或者VSCode打开该文件
+  npm run serve  
+或者VSCode打开该文件  
 2.浏览器输入http://localhost:8889/
 ****
 ## 前端界面展示
