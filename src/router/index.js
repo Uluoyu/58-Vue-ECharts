@@ -1,5 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import AreaPage from '../views/AreaPage.vue'
+import HouseTypePage from '../views/HouseTypePage.vue'
+import HousePayWayPage from '../views/HousePayWayPage.vue'
+import AreaAndPricePage from '../views/AreaAndPricePage.vue'
+import PricePage from '../views/PricePage.vue'
+import HouseAreaPage from '../views/HouseAreaPage.vue'
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
@@ -7,16 +13,35 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    redirect: '/home'
+  },
+  {
+    path: '/home',
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/areapage',
+    component: AreaPage
+  },
+  {
+    path: '/housetypepage',
+    component: HouseTypePage
+  },
+  {
+    path: '/housepaywaypage',
+    component: HousePayWayPage
+  },
+  {
+    path: '/areaandpricepage',
+    component: AreaAndPricePage
+  },
+  {
+    path: '/pricepage',
+    component: PricePage
+  },
+  {
+    path: '/houseareapage',
+    component: HouseAreaPage
   }
 ]
 
